@@ -5,7 +5,7 @@ const AppList = async () => {
 }
 
 export const metadata = {
-  title: 'Datasets - Dify',
+  title: 'Datasets - PBT', // PBT TODO: change to PBT
 }
 
 export default AppList

@@ -8,7 +8,7 @@ import './styles/globals.css'
 import './styles/markdown.scss'
 
 export const metadata = {
-  title: 'Dify',
+  title: 'PBT', // PBT TODO: change to PBT
 }
 
 export const viewport: Viewport = {

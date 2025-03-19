@@ -140,7 +140,7 @@ const translation = {
     communityFeedback: '로드맵 및 피드백',
     roadmap: '로드맵',
     community: '커뮤니티',
-    about: 'Dify 소개',
+    about: 'PBT 소개', // PBT TODO: change to PBT
     logout: '로그아웃',
   },
   settings: {
@@ -168,15 +168,15 @@ const translation = {
     newPassword: '새 비밀번호',
     confirmPassword: '비밀번호 확인',
     notEqual: '비밀번호가 일치하지 않습니다.',
-    langGeniusAccount: 'Dify 계정',
-    langGeniusAccountTip: 'Dify 계정과 관련된 사용자 데이터.',
+    langGeniusAccount: 'PBT 계정', // PBT TODO: change to PBT
+    langGeniusAccountTip: 'PBT 계정과 관련된 사용자 데이터.', // PBT TODO: change to PBT
     editName: '이름 편집',
     showAppLength: '{{length}}개의 앱 표시',
     delete: '계정 삭제',
     deleteTip: '계정을 삭제하면 모든 데이터가 영구적으로 지워지며 복구할 수 없습니다.',
     deleteConfirmTip: '확인하려면 등록된 이메일에서 다음 내용을 로 보내주세요 ',
     myAccount: '내 계정',
-    studio: '디파이 스튜디오',
+    studio: '스튜디오', // PBT TODO: change to PBT
     account: '계정',
     deletePrivacyLink: '개인 정보 보호 정책.',
     deleteSuccessTip: '계정 삭제를 완료하는 데 시간이 필요합니다. 모든 작업이 완료되면 이메일로 연락드리겠습니다.',
@@ -214,7 +214,7 @@ const translation = {
     sendInvite: '초대 보내기',
     invitedAsRole: '{{role}} 사용자로 초대되었습니다',
     invitationSent: '초대가 전송되었습니다',
-    invitationSentTip: '초대가 전송되었으며, 그들은 Dify에 로그인하여 당신의 팀 데이터에 액세스할 수 있습니다.',
+    invitationSentTip: '초대가 전송되었으며, 그들은 PBT에 로그인하여 당신의 팀 데이터에 액세스할 수 있습니다.', // PBT TODO: change to PBT
     invitationLink: '초대 링크',
     failedInvitationEmails: '다음 사용자들은 성공적으로 초대되지 않았습니다',
     ok: '확인',
@@ -267,7 +267,7 @@ const translation = {
       openaiHosted: '호스팅된 OpenAI',
       onTrial: '트라이얼 중',
       exhausted: '할당량이 다 사용되었습니다',
-      desc: 'Dify가 제공하는 OpenAI 호스팅 서비스를 사용하면 GPT-3.5와 같은 모델을 사용할 수 있습니다. 트라이얼 할당량이 다 사용되기 전에 다른 모델 제공자를 설정해야 합니다.',
+      desc: 'PBT가 제공하는 OpenAI 호스팅 서비스를 사용하면 GPT-3.5와 같은 모델을 사용할 수 있습니다. 트라이얼 할당량이 다 사용되기 전에 다른 모델 제공자를 설정해야 합니다.', // PBT TODO: change to PBT
       callTimes: '호출 횟수',
       usedUp: '트라이얼 할당량이 다 사용되었습니다. 다른 모델 제공자를 추가하세요.',
       useYourModel: '현재 사용자 정의 모델 제공자를 사용 중입니다.',
@@ -434,7 +434,7 @@ const translation = {
     },
   },
   apiBasedExtension: {
-    title: 'API 기반 확장은 Dify 애플리케이션 전체에서 간편한 사용을 위한 설정을 단순화하고 집중적인 API 관리를 제공합니다.',
+    title: 'API 기반 확장은 PBT 애플리케이션 전체에서 간편한 사용을 위한 설정을 단순화하고 집중적인 API 관리를 제공합니다.', // PBT TODO: change to PBT
     link: '사용자 정의 API 기반 확장을 개발하는 방법 배우기',
     linkUrl: 'https://docs.dify.ai/features/extension/api_based_extension',
     add: 'API 기반 확장 추가',
@@ -465,12 +465,12 @@ const translation = {
   about: {
     changeLog: '변경 로그',
     updateNow: '지금 업데이트',
-    nowAvailable: 'Dify {{version}} 사용 가능합니다.',
-    latestAvailable: 'Dify {{version}} 최신 버전입니다.',
+    nowAvailable: 'PBT {{version}} 사용 가능합니다.',
+    latestAvailable: 'PBT {{version}} 최신 버전입니다.',
   },
   appMenus: {
     overview: '모니터링',
-    promptEng: '오케스트레이트',
+    promptEng: '플레이그라운드', // PBT TODO: change to PBT
     apiAccess: 'API 액세스',
     logAndAnn: '로그 및 어노테이션',
     logs: '로그',

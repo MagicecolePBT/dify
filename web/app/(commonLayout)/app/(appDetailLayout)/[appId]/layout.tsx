@@ -98,7 +98,7 @@ const AppDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
 
   useEffect(() => {
     if (appDetail) {
-      document.title = `${(appDetail.name || 'App')} - Dify`
+      document.title = `${(appDetail.name || 'App')} - PBT` // PBT TODO: change to PBT
       const localeMode = localStorage.getItem('app-detail-collapse-or-expand') || 'expand'
       const mode = isMobile ? 'collapse' : 'expand'
       setAppSiderbarExpand(isMobile ? mode : localeMode)
@@ -106,7 +106,7 @@ const AppDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
       // if ((appDetail.mode === 'advanced-chat' || appDetail.mode === 'workflow') && (pathname).endsWith('workflow'))
       //   setAppSiderbarExpand('collapse')
     }
-  }, [appDetail, isMobile])
+  }, [appDetail, isMobile, setAppSiderbarExpand]) // PBT TODO
 
   useEffect(() => {
     setAppDetail()
@@ -139,7 +139,7 @@ const AppDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
     }
     else {
       setAppDetail({ ...res, enable_sso: false })
-      setNavigation(getNavigations(appId, isCurrentWorkspaceEditor, res.mode))
+      setNavigation(getNavigations(appId, isCurrentWorkspaceEditor, res.mode) as { name: string; href: string; icon: NavIcon; selectedIcon: NavIcon }[]) // PBT TODO
       if (systemFeatures.enable_web_sso_switch_component && canIEditApp) {
         fetchAppSSO({ appId }).then((ssoRes) => {
           setAppDetail({ ...res, enable_sso: ssoRes.enabled })
@@ -163,7 +163,7 @@ const AppDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
   return (
     <div className={cn(s.app, 'flex', 'overflow-hidden')}>
       {appDetail && (
-        <AppSideBar title={appDetail.name} icon={appDetail.icon} icon_background={appDetail.icon_background} desc={appDetail.mode} navigation={navigation} />
+        <AppSideBar title={appDetail.name ?? ''} icon={appDetail.icon ?? ''} icon_background={appDetail.icon_background ?? ''} desc={appDetail.mode ?? ''} navigation={navigation} /> // PBT TODO
       )}
       <div className="bg-components-panel-bg grow overflow-hidden">
         {children}

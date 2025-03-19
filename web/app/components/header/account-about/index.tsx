@@ -1,23 +1,23 @@
 'use client'
 import { useTranslation } from 'react-i18next'
-import Link from 'next/link'
+// import Link from 'next/link'
 import dayjs from 'dayjs'
 import { RiCloseLine } from '@remixicon/react'
 import s from './index.module.css'
-import classNames from '@/utils/classnames'
+// import classNames from '@/utils/classnames'
 import Modal from '@/app/components/base/modal'
 import type { LangGeniusVersionResponse } from '@/models/common'
-import { IS_CE_EDITION } from '@/config'
+// import { IS_CE_EDITION } from '@/config'
 import LogoSite from '@/app/components/base/logo/logo-site'
 
 type IAccountSettingProps = {
   langeniusVersionInfo: LangGeniusVersionResponse
   onCancel: () => void
 }
-const buttonClassName = `
-shrink-0 flex items-center h-8 px-3 rounded-lg border border-gray-200
-text-xs text-gray-800 font-medium
-`
+// const buttonClassName = `
+// shrink-0 flex items-center h-8 px-3 rounded-lg border border-gray-200
+// text-xs text-gray-800 font-medium
+// `
 export default function AccountAbout({
   langeniusVersionInfo,
   onCancel,
@@ -39,8 +39,9 @@ export default function AccountAbout({
           <LogoSite className='mx-auto mb-2' />
           <div className='mb-3 text-center text-xs font-normal text-gray-500'>Version {langeniusVersionInfo?.current_version}</div>
           <div className='mb-4 text-center text-xs font-normal text-gray-700'>
-            <div>© {dayjs().year()} LangGenius, Inc., Contributors.</div>
-            <div className='text-[#1C64F2]'>
+            {/* PBT TODO: change to PBT */}
+            <div>© {dayjs().year()} MagicEcole, Inc.</div>
+            {/* <div className='text-[#1C64F2]'>
               {
                 IS_CE_EDITION
                   ? <Link href={'https://github.com/langgenius/dify/blob/main/LICENSE'} target='_blank' rel='noopener noreferrer'>Open Source License</Link>
@@ -49,7 +50,7 @@ export default function AccountAbout({
                     <Link href='https://dify.ai/terms' target='_blank' rel='noopener noreferrer'>Terms of Service</Link>
                   </>
               }
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='mb-4 -mx-8 h-[0.5px] bg-gray-200' />
@@ -61,7 +62,8 @@ export default function AccountAbout({
                 : t('common.about.nowAvailable', { version: langeniusVersionInfo.latest_version })
             }
           </div>
-          <div className='flex items-center'>
+          {/* PBT TODO: change to PBT */}
+          {/* <div className='flex items-center'>
             <Link
               className={classNames(buttonClassName, 'mr-2')}
               href={'https://github.com/langgenius/dify/releases'}
@@ -80,7 +82,7 @@ export default function AccountAbout({
                 </Link>
               )
             }
-          </div>
+          </div> */}
         </div>
       </div>
     </Modal>

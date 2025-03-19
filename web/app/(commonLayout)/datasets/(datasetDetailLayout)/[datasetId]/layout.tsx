@@ -73,7 +73,7 @@ type IExtraInfoProps = {
 
 const ExtraInfo = ({ isMobile, relatedApps, expand }: IExtraInfoProps) => {
   const locale = getLocaleOnClient()
-  const [isShowTips, { toggle: toggleTips, set: setShowTips }] = useBoolean(!isMobile)
+  const [_isShowTips, { toggle: _toggleTips, set: setShowTips }] = useBoolean(!isMobile)
   const { t } = useTranslation()
 
   const hasRelatedApps = relatedApps?.data && relatedApps?.data?.length > 0
@@ -189,7 +189,7 @@ const DatasetDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
 
   useEffect(() => {
     if (datasetRes)
-      document.title = `${datasetRes.name || 'Dataset'} - Dify`
+      document.title = `${datasetRes.name || 'Dataset'} - PBT` // PBT TODO: change to PBT
   }, [datasetRes])
 
   const setAppSiderbarExpand = useStore(state => state.setAppSiderbarExpand)

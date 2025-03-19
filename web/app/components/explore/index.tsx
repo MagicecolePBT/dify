@@ -24,7 +24,7 @@ const Explore: FC<IExploreProps> = ({
   const [installedApps, setInstalledApps] = useState<InstalledApp[]>([])
 
   useEffect(() => {
-    document.title = `${t('explore.title')} -  Dify`;
+    document.title = `${t('explore.title')} -  PBT`; // PBT TODO: change to PBT
     (async () => {
       const { accounts } = await fetchMembers({ url: '/workspaces/current/members', params: {} })
       if (!accounts)
@@ -32,12 +32,12 @@ const Explore: FC<IExploreProps> = ({
       const currUser = accounts.find(account => account.id === userProfile.id)
       setHasEditPermission(currUser?.role !== 'normal')
     })()
-  }, [])
+  }, [t, userProfile.id])
 
   useEffect(() => {
     if (isCurrentWorkspaceDatasetOperator)
       return router.replace('/datasets')
-  }, [isCurrentWorkspaceDatasetOperator])
+  }, [isCurrentWorkspaceDatasetOperator, router])
 
   return (
     <div className='flex h-full bg-gray-100 border-t border-gray-200 overflow-hidden'>

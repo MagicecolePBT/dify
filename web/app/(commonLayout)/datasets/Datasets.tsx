@@ -61,22 +61,23 @@ const Datasets = ({
 
   useEffect(() => {
     loadingStateRef.current = isLoading
-    document.title = `${t('dataset.knowledge')} - Dify`
-  }, [isLoading])
+    document.title = `${t('dataset.knowledge')} - PBT` // PBT TODO: change to PBT
+  }, [isLoading, t])
 
   useEffect(() => {
+    const container = containerRef.current
     const onScroll = debounce(() => {
       if (!loadingStateRef.current) {
-        const { scrollTop, clientHeight } = containerRef.current!
+        const { scrollTop, clientHeight } = container!
         const anchorOffset = anchorRef.current!.offsetTop
         if (anchorOffset - scrollTop - clientHeight < 100)
           setSize(size => size + 1)
       }
     }, 50)
 
-    containerRef.current?.addEventListener('scroll', onScroll)
-    return () => containerRef.current?.removeEventListener('scroll', onScroll)
-  }, [])
+    container?.addEventListener('scroll', onScroll)
+    return () => container?.removeEventListener('scroll', onScroll)
+  }, [setSize, containerRef])
 
   return (
     <nav className='grid content-start grid-cols-1 gap-4 px-12 pt-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grow shrink-0'>

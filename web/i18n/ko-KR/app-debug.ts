@@ -3,7 +3,7 @@ const translation = {
     line1: '프롬프트',
     line2: '엔지니어링',
   },
-  orchestrate: '오케스트레이션',
+  orchestrate: '플레이그라운드',
   promptMode: {
     simple: '전문가 모드로 전환하여 전체 프롬프트를 편집합니다',
     advanced: '전문가 모드',
@@ -201,7 +201,7 @@ const translation = {
   },
   automatic: {
     title: '자동 어플리케이션 오케스트레이션',
-    description: '시나리오를 설명하세요. Dify가 어플리케이션을 자동으로 오케스트레이션 합니다.',
+    description: '시나리오를 설명하세요. PBT가 어플리케이션을 자동으로 오케스트레이션 합니다.',
     intendedAudience: '누가 대상이 되는지 설명하세요.',
     intendedAudiencePlaceHolder: '예: 학생',
     solveProblem: '어떤 문제를 AI가 해결할 것으로 예상하나요?',
