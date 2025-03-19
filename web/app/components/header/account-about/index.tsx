@@ -1,5 +1,5 @@
 'use client'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 // import Link from 'next/link'
 import dayjs from 'dayjs'
 import { RiCloseLine } from '@remixicon/react'
@@ -19,11 +19,12 @@ type IAccountSettingProps = {
 // text-xs text-gray-800 font-medium
 // `
 export default function AccountAbout({
-  langeniusVersionInfo,
+  // langeniusVersionInfo,
   onCancel,
 }: IAccountSettingProps) {
-  const { t } = useTranslation()
-  const isLatest = langeniusVersionInfo.current_version === langeniusVersionInfo.latest_version
+  // const { t } = useTranslation()
+  // PBT TODO: change to PBT
+  // const isLatest = langeniusVersionInfo.current_version === langeniusVersionInfo.latest_version
 
   return (
     <Modal
@@ -37,7 +38,8 @@ export default function AccountAbout({
         </div>
         <div>
           <LogoSite className='mx-auto mb-2' />
-          <div className='mb-3 text-center text-xs font-normal text-gray-500'>Version {langeniusVersionInfo?.current_version}</div>
+          {/* PBT TODO: change to PBT */}
+          {/* <div className='mb-3 text-center text-xs font-normal text-gray-500'>Version {langeniusVersionInfo?.current_version}</div> */}
           <div className='mb-4 text-center text-xs font-normal text-gray-700'>
             {/* PBT TODO: change to PBT */}
             <div>© {dayjs().year()} MagicEcole, Inc.</div>
@@ -55,15 +57,14 @@ export default function AccountAbout({
         </div>
         <div className='mb-4 -mx-8 h-[0.5px] bg-gray-200' />
         <div className='flex justify-between items-center'>
-          <div className='text-xs font-medium text-gray-800'>
+          {/* <div className='text-xs font-medium text-gray-800'>
             {
               isLatest
                 ? t('common.about.latestAvailable', { version: langeniusVersionInfo.latest_version })
                 : t('common.about.nowAvailable', { version: langeniusVersionInfo.latest_version })
             }
           </div>
-          {/* PBT TODO: change to PBT */}
-          {/* <div className='flex items-center'>
+          <div className='flex items-center'>
             <Link
               className={classNames(buttonClassName, 'mr-2')}
               href={'https://github.com/langgenius/dify/releases'}

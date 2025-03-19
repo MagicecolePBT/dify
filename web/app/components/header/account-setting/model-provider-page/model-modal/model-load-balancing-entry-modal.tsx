@@ -315,7 +315,8 @@ const ModelLoadBalancingEntryModal: FC<ModelModalProps> = ({
                   : (
                     <div className='flex justify-center items-center py-3 bg-gray-50 text-xs text-gray-500'>
                       <Lock01 className='mr-1 w-3 h-3 text-gray-500' />
-                      {t('common.modelProvider.encrypted.front')}
+                      {/* PBT TODO: change to PBT */}
+                      {/* {t('common.modelProvider.encrypted.front')}
                       <a
                         className='text-primary-600 mx-1'
                         target='_blank' rel='noopener noreferrer'
@@ -323,7 +324,7 @@ const ModelLoadBalancingEntryModal: FC<ModelModalProps> = ({
                       >
                         PKCS1_OAEP
                       </a>
-                      {t('common.modelProvider.encrypted.back')}
+                      {t('common.modelProvider.encrypted.back')} */}
                     </div>
                   )
               }

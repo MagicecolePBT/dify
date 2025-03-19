@@ -54,7 +54,8 @@ const PanelOperatorPopup = ({
   const edge = edges.find(edge => edge.target === id)
   const author = useMemo(() => {
     if (data.type !== BlockEnum.Tool)
-      return nodesExtraData[data.type].author
+      // return nodesExtraData[data.type].author
+      return 'PBT' // TODO: change to PBT
 
     if (data.provider_type === CollectionType.builtIn)
       return buildInTools.find(toolWithProvider => toolWithProvider.id === data.provider_id)?.author
@@ -63,7 +64,8 @@ const PanelOperatorPopup = ({
       return workflowTools.find(toolWithProvider => toolWithProvider.id === data.provider_id)?.author
 
     return customTools.find(toolWithProvider => toolWithProvider.id === data.provider_id)?.author
-  }, [data, nodesExtraData, buildInTools, customTools, workflowTools])
+  // }, [data, nodesExtraData, buildInTools, customTools, workflowTools])
+  }, [data, buildInTools, customTools, workflowTools]) // TODO: change to PBT
 
   const about = useMemo(() => {
     if (data.type !== BlockEnum.Tool)
@@ -185,7 +187,10 @@ const PanelOperatorPopup = ({
           </div>
           <div className='mb-1 text-gray-700 leading-[18px]'>{about}</div>
           <div className='leading-[18px]'>
-            {t('workflow.panel.createdBy')} {author}
+            {
+            /* PBT TODO: change to PBT */
+            /* {t('workflow.panel.createdBy')} {author} */
+            }
           </div>
         </div>
       </div>

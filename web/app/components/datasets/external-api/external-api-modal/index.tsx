@@ -9,7 +9,7 @@ import {
   RiBook2Line,
   RiCloseLine,
   RiInformation2Line,
-  RiLock2Fill,
+  // RiLock2Fill,
 } from '@remixicon/react'
 import type { CreateExternalAPIReq, FormSchema } from '../declarations'
 import Form from './Form'
@@ -184,7 +184,8 @@ const AddExternalAPIModal: FC<AddExternalAPIModalProps> = ({ data, onSave, onCan
                 {t('dataset.externalAPIForm.save')}
               </Button>
             </div>
-            <div className='flex px-2 py-3 justify-center items-center gap-1 self-stretch rounded-b-2xl
+            {/* PBT TODO: change to PBT */}
+            {/* <div className='flex px-2 py-3 justify-center items-center gap-1 self-stretch rounded-b-2xl
               border-t-[0.5px] border-divider-subtle bg-background-soft text-text-tertiary system-xs-regular'
             >
               <RiLock2Fill className='w-3 h-3 text-text-quaternary' />
@@ -197,7 +198,7 @@ const AddExternalAPIModal: FC<AddExternalAPIModalProps> = ({ data, onSave, onCan
                 PKCS1_OAEP
               </a>
               {t('dataset.externalAPIForm.encrypted.end')}
-            </div>
+            </div> */}
           </div>
           {showConfirm && (datasetBindings?.length ?? 0) > 0 && (
             <Confirm

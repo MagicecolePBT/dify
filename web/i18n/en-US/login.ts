@@ -64,8 +64,8 @@ const translation = {
     registrationNotAllowed: 'Account not found. Please contact the system admin to register.',
   },
   license: {
-    tip: 'Before starting Community Edition, read the GitHub',
-    link: 'Open-source License',
+    tip: '',
+    link: '',
   },
   join: 'Join ',
   joinTipStart: 'Invite you join ',

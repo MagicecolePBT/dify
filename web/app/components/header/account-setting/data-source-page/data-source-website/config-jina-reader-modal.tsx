@@ -6,7 +6,7 @@ import {
   PortalToFollowElem,
   PortalToFollowElemContent,
 } from '@/app/components/base/portal-to-follow-elem'
-import { Lock01 } from '@/app/components/base/icons/src/vender/solid/security'
+// import { Lock01 } from '@/app/components/base/icons/src/vender/solid/security'
 import Button from '@/app/components/base/button'
 import { DataSourceProvider } from '@/models/common'
 import Field from '@/app/components/datasets/create/website/base/field'
@@ -117,7 +117,8 @@ const ConfigJinaReaderModal: FC<Props> = ({
 
               </div>
             </div>
-            <div className='border-t-[0.5px] border-t-black/5'>
+            {/* PBT TODO: change to PBT */}
+            {/* <div className='border-t-[0.5px] border-t-black/5'>
               <div className='flex justify-center items-center py-3 bg-gray-50 text-xs text-gray-500'>
                 <Lock01 className='mr-1 w-3 h-3 text-gray-500' />
                 {t('common.modelProvider.encrypted.front')}
@@ -130,7 +131,7 @@ const ConfigJinaReaderModal: FC<Props> = ({
                 </a>
                 {t('common.modelProvider.encrypted.back')}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </PortalToFollowElemContent>

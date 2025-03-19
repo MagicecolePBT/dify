@@ -4,7 +4,7 @@ import { forwardRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
   RiAddLine,
-  RiArrowRightLine,
+  // RiArrowRightLine,
 } from '@remixicon/react'
 
 const CreateAppCard = forwardRef<HTMLAnchorElement>((_, ref) => {
@@ -24,11 +24,12 @@ const CreateAppCard = forwardRef<HTMLAnchorElement>((_, ref) => {
           <div className='system-md-semibold text-text-secondary group-hover:text-text-accent'>{t('dataset.createDataset')}</div>
         </div>
       </a>
-      <div className='p-4 pt-0 text-text-tertiary system-xs-regular'>{t('dataset.createDatasetIntro')}</div>
+      {/* PBT TODO: change to PBT */}
+      {/* <div className='p-4 pt-0 text-text-tertiary system-xs-regular'>{t('dataset.createDatasetIntro')}</div>
       <a className='group flex p-4 items-center gap-1 border-t-[0.5px] border-divider-subtle rounded-b-xl cursor-pointer' href='/datasets/connect'>
         <div className='system-xs-medium text-text-tertiary group-hover:text-text-accent'>{t('dataset.connectDataset')}</div>
         <RiArrowRightLine className='w-3.5 h-3.5 text-text-tertiary group-hover:text-text-accent' />
-      </a>
+      </a> */}
     </div>
   )
 })
