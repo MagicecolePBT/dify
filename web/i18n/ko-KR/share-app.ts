@@ -38,13 +38,13 @@ const translation = {
       description: '컨텐츠 생성을 시작하고 저장된 결과를 여기서 찾아보세요.',
       startCreateContent: '컨텐츠 생성 시작',
     },
-    title: 'AI 완성',
+    title: 'AI 생성', // PBT TODO: change to PBT
     queryTitle: '컨텐츠 쿼리',
-    completionResult: '완성 결과',
+    completionResult: '생성 결과', // PBT TODO: change to PBT
     queryPlaceholder: '쿼리 컨텐츠를 작성해주세요...',
     run: '실행',
     copy: '복사',
-    resultTitle: 'AI 완성',
+    resultTitle: 'AI 생성', // PBT TODO: change to PBT
     noData: 'AI가 필요한 내용을 제공할 것입니다.',
     csvUploadTitle: 'CSV 파일을 여기로 끌어다 놓거나',
     browse: '찾아보기',

@@ -85,18 +85,19 @@ export default function AccountSetting({
         icon: <RiMoneyDollarCircleLine className={iconClassName} />,
         activeIcon: <RiMoneyDollarCircleFill className={iconClassName} />,
       },
-      {
-        key: 'data-source',
-        name: t('common.settings.dataSource'),
-        icon: <RiDatabase2Line className={iconClassName} />,
-        activeIcon: <RiDatabase2Fill className={iconClassName} />,
-      },
-      {
-        key: 'api-based-extension',
-        name: t('common.settings.apiBasedExtension'),
-        icon: <RiPuzzle2Line className={iconClassName} />,
-        activeIcon: <RiPuzzle2Fill className={iconClassName} />,
-      },
+      // PBT TODO: Remove this
+      // {
+      //   key: 'data-source',
+      //   name: t('common.settings.dataSource'),
+      //   icon: <RiDatabase2Line className={iconClassName} />,
+      //   activeIcon: <RiDatabase2Fill className={iconClassName} />,
+      // },
+      // {
+      //   key: 'api-based-extension',
+      //   name: t('common.settings.apiBasedExtension'),
+      //   icon: <RiPuzzle2Line className={iconClassName} />,
+      //   activeIcon: <RiPuzzle2Fill className={iconClassName} />,
+      // },
       {
         key: (enableReplaceWebAppLogo || enableBilling) ? 'custom' : false,
         name: t('custom.custom'),

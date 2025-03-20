@@ -12,49 +12,49 @@
       "name": "简体中文",
       "prompt_name": "Chinese Simplified",
       "example": "你好，PBT！",
-      "supported": true
+      "supported": false
     },
     {
       "value": "zh-Hant",
       "name": "繁體中文",
       "prompt_name": "Chinese Traditional",
       "example": "你好，PBT！",
-      "supported": true
+      "supported": false
     },
     {
       "value": "pt-BR",
       "name": "Português (Brasil)",
       "prompt_name": "Portuguese",
       "example": "Olá, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "es-ES",
       "name": "Español (España)",
       "prompt_name": "Spanish",
       "example": "Saluton, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "fr-FR",
       "name": "Français (France)",
       "prompt_name": "French",
       "example": "Bonjour, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "de-DE",
       "name": "Deutsch (Deutschland)",
       "prompt_name": "German",
       "example": "Hallo, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "ja-JP",
       "name": "日本語 (日本)",
       "prompt_name": "Japanese",
       "example": "こんにちは、PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "ko-KR",
@@ -68,21 +68,21 @@
       "name": "Русский (Россия)",
       "prompt_name": "Russian",
       "example": " Привет, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "it-IT",
       "name": "Italiano (Italia)",
       "prompt_name": "Italian",
       "example": "Ciao, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "th-TH",
       "name": "ไทย (ประเทศไทย)",
       "prompt_name": "Thai",
       "example": "สวัสดี PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "id-ID",
@@ -96,56 +96,56 @@
       "name": "Українська (Україна)",
       "prompt_name": "Ukrainian",
       "example": "Привет, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "vi-VN",
       "name": "Tiếng Việt (Việt Nam)",
       "prompt_name": "Vietnamese",
       "example": "Xin chào, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "ro-RO",
       "name": "Română (România)",
       "prompt_name": "Romanian",
       "example": "Salut, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "pl-PL",
       "name": "Polski (Polish)",
       "prompt_name": "Polish",
       "example": "Cześć, PBT!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "hi-IN",
       "name": "Hindi (India)",
       "prompt_name": "Hindi",
       "example": "नमस्ते, PBT!",
-      "supported": "true"
+      "supported": false
     },
     {
       "value": "tr-TR",
       "name": "Türkçe",
       "prompt_name": "Türkçe",
       "example": "Selam!",
-      "supported": "true"
+      "supported": false
     },
     {
       "value": "fa-IR",
       "name": "Farsi (Iran)",
       "prompt_name": "Farsi",
       "example": "سلام, دیفای!",
-      "supported": true
+      "supported": false
     },
     {
       "value": "sl-SI",
       "name": "Slovensko (Slovenija)",
       "prompt_name": "Slovensko",
       "example": "Zdravo, PBT!",
-      "supported": true
+      "supported": false
     }
   ]
 }

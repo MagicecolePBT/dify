@@ -6,10 +6,10 @@ import { usePathname, useRouter } from 'next/navigation'
 import {
   RiDashboard2Fill,
   RiDashboard2Line,
-  RiFileList3Fill,
-  RiFileList3Line,
-  RiTerminalBoxFill,
-  RiTerminalBoxLine,
+  // RiFileList3Fill,
+  // RiFileList3Line,
+  // RiTerminalBoxFill,
+  // RiTerminalBoxLine,
   RiTerminalWindowFill,
   RiTerminalWindowLine,
 } from '@remixicon/react'
@@ -69,23 +69,24 @@ const AppDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
         }]
         : []
       ),
-      {
-        name: t('common.appMenus.apiAccess'),
-        href: `/app/${appId}/develop`,
-        icon: RiTerminalBoxLine,
-        selectedIcon: RiTerminalBoxFill,
-      },
-      ...(isCurrentWorkspaceEditor
-        ? [{
-          name: mode !== 'workflow'
-            ? t('common.appMenus.logAndAnn')
-            : t('common.appMenus.logs'),
-          href: `/app/${appId}/logs`,
-          icon: RiFileList3Line,
-          selectedIcon: RiFileList3Fill,
-        }]
-        : []
-      ),
+      // PBT TODO: Remove this
+      // {
+      //   name: t('common.appMenus.apiAccess'),
+      //   href: `/app/${appId}/develop`,
+      //   icon: RiTerminalBoxLine,
+      //   selectedIcon: RiTerminalBoxFill,
+      // },
+      // ...(isCurrentWorkspaceEditor
+      //   ? [{
+      //     name: mode !== 'workflow'
+      //       ? t('common.appMenus.logAndAnn')
+      //       : t('common.appMenus.logs'),
+      //     href: `/app/${appId}/logs`,
+      //     icon: RiFileList3Line,
+      //     selectedIcon: RiFileList3Fill,
+      //   }]
+      //   : []
+      // ),
       {
         name: t('common.appMenus.overview'),
         href: `/app/${appId}/overview`,

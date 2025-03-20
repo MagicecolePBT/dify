@@ -115,11 +115,12 @@ const NoteNode = ({
             </div>
           </div>
           {
-            data.showAuthor && (
-              <div className='p-3 pt-0 text-xs text-text-tertiary'>
-                {data.author}
-              </div>
-            )
+            // PBT TODO: Remove this
+            // data.showAuthor && (
+            //   <div className='p-3 pt-0 text-xs text-text-tertiary'>
+            //     {data.author}
+            //   </div>
+            // )
           }
         </>
       </NoteEditorContextProvider>

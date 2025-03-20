@@ -175,7 +175,7 @@ const Apps = ({
         'flex items-center justify-between mt-6',
         pageType === PageType.EXPLORE ? 'px-12' : 'px-8',
       )}>
-        <>
+        {/* <>
           {pageType !== PageType.EXPLORE && (
             <>
               <AppTypeSelector value={currentType} onChange={setCurrentType}/>
@@ -188,7 +188,7 @@ const Apps = ({
             onChange={setCurrCategory}
             allCategoriesEn={allCategoriesEn}
           />
-        </>
+        </> */}
         <Input
           showLeftIcon
           showClearIcon

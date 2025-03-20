@@ -33,7 +33,7 @@ const PanelOperatorPopup = ({
   id,
   data,
   onClosePopup,
-  showHelpLink,
+  // showHelpLink,
 }: PanelOperatorPopupProps) => {
   const { t } = useTranslation()
   const language = useGetLanguage()
@@ -164,7 +164,7 @@ const PanelOperatorPopup = ({
           </>
         )
       }
-      {
+      {/* {
         showHelpLink && (
           <>
             <div className='p-1'>
@@ -179,7 +179,7 @@ const PanelOperatorPopup = ({
             <div className='h-[1px] bg-gray-100'></div>
           </>
         )
-      }
+      } */}
       <div className='p-1'>
         <div className='px-3 py-2 text-xs text-gray-500'>
           <div className='flex items-center mb-1 h-[22px] font-medium'>

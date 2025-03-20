@@ -121,7 +121,8 @@ const CardView: FC<ICardViewProps> = ({ appId }) => {
 
   return (
     <div className="grid gap-6 grid-cols-1 xl:grid-cols-2 w-full mb-6">
-      <AppCard
+      {/* PBT TODO: Remove this */}
+      {/* <AppCard
         appInfo={appDetail}
         cardType="webapp"
         onChangeStatus={onChangeSiteStatus}
@@ -132,7 +133,7 @@ const CardView: FC<ICardViewProps> = ({ appId }) => {
         cardType="api"
         appInfo={appDetail}
         onChangeStatus={onChangeApiStatus}
-      />
+      /> */}
     </div>
   )
 }

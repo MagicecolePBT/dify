@@ -29,10 +29,10 @@ const translation = {
     ok: '확인',
   },
   completionMode: {
-    title: '완성 모드 API',
-    info: '문서, 요약, 번역 등 고품질 텍스트 생성을 위해 사용자 입력을 사용하는 완성 메시지 API를 사용합니다. 텍스트 생성은 Prompt Engineering에서 설정한 모델 매개변수와 프롬프트 템플릿에 의존합니다.', // PBT TODO: change to PBT
-    createCompletionApi: '완성 메시지 생성',
-    createCompletionApiTip: '질의 응답 모드를 지원하기 위해 완성 메시지를 생성합니다.',
+    title: '생성 모드 API',
+    info: '문서, 요약, 번역 등 고품질 텍스트 생성을 위해 사용자 입력을 사용하는 생성 메시지 API를 사용합니다. 텍스트 생성은 Prompt Engineering에서 설정한 모델 매개변수와 프롬프트 템플릿에 의존합니다.', // PBT TODO: change to PBT
+    createCompletionApi: '생성 메시지 출력', // PBT TODO: change to PBT
+    createCompletionApiTip: '질의 응답 모드를 지원하기 위해 생성 메시지를 출력합니다.', // PBT TODO: change to PBT
     inputsTips:
       '(선택 사항) Prompt Eng의 변수에 해당하는 키-값 쌍으로 사용자 입력 필드를 제공합니다. 키는 변수 이름이고 값은 매개변수 값입니다. 필드 유형이 Select인 경우 전송되는 값은 미리 설정된 선택 사항 중 하나여야 합니다.',
     queryTips: '사용자 입력 텍스트 내용.',

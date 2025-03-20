@@ -10,7 +10,8 @@ import CreateAppTemplateDialog from '@/app/components/app/create-app-dialog'
 import CreateAppModal from '@/app/components/app/create-app-modal'
 import CreateFromDSLModal, { CreateFromDSLModalTab } from '@/app/components/app/create-from-dsl-modal'
 import { useProviderContext } from '@/context/provider-context'
-import { FileArrow01, FilePlus01, FilePlus02 } from '@/app/components/base/icons/src/vender/line/files'
+// import { FileArrow01, FilePlus01, FilePlus02 } from '@/app/components/base/icons/src/vender/line/files'
+import { FilePlus01, FilePlus02 } from '@/app/components/base/icons/src/vender/line/files'
 import cn from '@/utils/classnames'
 
 export type CreateAppCardProps = {
@@ -51,12 +52,13 @@ const CreateAppCard = forwardRef<HTMLDivElement, CreateAppCardProps>(({ classNam
           <FilePlus02 className='shrink-0 mr-2 w-4 h-4' />
           {t('app.newApp.startFromTemplate')}
         </button>
-        <button
+        {/* PBT TODO: Remove this */}
+        {/* <button
           onClick={() => setShowCreateFromDSLModal(true)}
           className='w-full flex items-center px-6 py-[7px] rounded-lg text-[13px] font-medium leading-[18px] text-text-tertiary cursor-pointer hover:text-text-secondary hover:bg-state-base-hover'>
           <FileArrow01 className='shrink-0 mr-2 w-4 h-4' />
           {t('app.importDSL')}
-        </button>
+        </button> */}
       </div>
 
       <CreateAppModal

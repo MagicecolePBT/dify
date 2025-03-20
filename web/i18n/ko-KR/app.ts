@@ -5,8 +5,8 @@ const translation = {
     chatbot: '챗봇',
     agent: '에이전트',
     workflow: '워크플로우',
-    completion: '완성',
-    basic: '기초의',
+    completion: '생성', // PBT TODO: Modify this
+    basic: '기초', // PBT TODO: Modify this
     advanced: '채팅 플로우',
   },
   duplicate: '복제',
@@ -112,7 +112,7 @@ const translation = {
     chatbot: '챗봇',
     agent: '에이전트',
     workflow: '워크플로우',
-    completion: '완성',
+    completion: '생성', // PBT TODO: Modify this
     advanced: '채팅 플로우',
   },
   tracing: {

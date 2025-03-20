@@ -229,7 +229,7 @@ const translation = {
     notSelectModel: '모델을 선택해 주세요',
     waitForImgUpload: '이미지 업로드가 완료될 때까지 기다려 주세요',
   },
-  chatSubTitle: '단계',
+  chatSubTitle: '프롬프트', // PBT TODO: Change this
   completionSubTitle: '접두사 프롬프트',
   promptTip: '프롬프트는 AI의 응답을 지시하고 제한하여 유도합니다. {{input}}과 같은 변수를 삽입하세요. 이 프롬프트는 사용자에게 표시되지 않습니다.',
   formattingChangedTitle: '포맷이 변경되었습니다',
@@ -338,7 +338,7 @@ const translation = {
     title: '모델 및 매개변수',
     modeType: {
       chat: '채팅',
-      completion: '완성',
+      completion: '생성', // PBT TODO: Modify this
     },
   },
   inputs: {

@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { RiApps2AddLine, RiArrowRightLine, RiSparklingFill } from '@remixicon/react'
+// import { RiApps2AddLine, RiArrowRightLine, RiSparklingFill } from '@remixicon/react'
+import { RiArrowRightLine, RiSparklingFill } from '@remixicon/react'
 import { Citations, ContentModeration, FolderUpload, LoveMessage, MessageFast, Microphone01, TextToAudio, VirtualAssistant } from '@/app/components/base/icons/src/vender/features'
 import Button from '@/app/components/base/button'
 import Tooltip from '@/app/components/base/tooltip'
@@ -37,13 +38,14 @@ const FeatureBar = ({
 
   return (
     <div className='-translate-y-2 m-1 mt-0 px-2.5 py-2 pt-4 bg-util-colors-indigo-indigo-50 rounded-b-[10px] border-l border-b border-r border-components-panel-border-subtle'>
-      {noFeatureEnabled && (
+      {/* PBT TODO: Remove this */}
+      {/* {noFeatureEnabled && (
         <div className='flex items-end gap-1 cursor-pointer' onClick={() => onFeatureBarClick?.(true)}>
           <RiApps2AddLine className='w-3.5 h-3.5 text-text-accent' />
           <div className='text-text-accent body-xs-medium'>{t('appDebug.feature.bar.empty')}</div>
           <RiArrowRightLine className='w-3.5 h-3.5 text-text-accent' />
         </div>
-      )}
+      )} */}
       {!noFeatureEnabled && (
         <div className='flex items-center gap-2'>
           <div className='shrink-0 flex items-center gap-0.5'>

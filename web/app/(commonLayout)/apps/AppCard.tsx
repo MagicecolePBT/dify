@@ -71,7 +71,7 @@ const AppCard = ({ app, onRefresh }: AppCardProps) => {
       })
     }
     setShowConfirmDelete(false)
-  }, [app.id])
+  }, [app.id, mutateApps, notify, onPlanInfoChanged, onRefresh, t])
 
   const onEdit: CreateAppModalProps['onConfirm'] = useCallback(async ({
     name,
@@ -233,10 +233,11 @@ const AppCard = ({ app, onRefresh }: AppCardProps) => {
         <button className={s.actionItem} onClick={onClickDuplicate}>
           <span className={s.actionName}>{t('app.duplicate')}</span>
         </button>
-        <button className={s.actionItem} onClick={onClickExport}>
+        {/* PBT TODO: Remove this */}
+        {/* <button className={s.actionItem} onClick={onClickExport}>
           <span className={s.actionName}>{t('app.export')}</span>
-        </button>
-        {(app.mode === 'completion' || app.mode === 'chat') && (
+        </button> */}
+        {/* {(app.mode === 'completion' || app.mode === 'chat') && (
           <>
             <Divider className="!my-1" />
             <div
@@ -246,12 +247,13 @@ const AppCard = ({ app, onRefresh }: AppCardProps) => {
               <span className='text-gray-700 text-sm leading-5'>{t('app.switch')}</span>
             </div>
           </>
-        )}
+        )} */}
         <Divider className="!my-1" />
-        <button className={s.actionItem} onClick={onClickInstalledApp}>
+        {/* PBT TODO: Remove this */}
+        {/* <button className={s.actionItem} onClick={onClickInstalledApp}>
           <span className={s.actionName}>{t('app.openInExplore')}</span>
         </button>
-        <Divider className="!my-1" />
+        <Divider className="!my-1" /> */}
         <div
           className={cn(s.actionItem, s.deleteActionItem, 'group')}
           onClick={onClickDelete}

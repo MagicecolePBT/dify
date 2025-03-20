@@ -1,7 +1,8 @@
 'use client'
 import React, { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { RiArrowRightLine, RiFolder6Line } from '@remixicon/react'
+// import { RiArrowRightLine, RiFolder6Line } from '@remixicon/react'
+import { RiArrowRightLine } from '@remixicon/react'
 import FilePreview from '../file-preview'
 import FileUploader from '../file-uploader'
 import NotionPagePreview from '../notion-page-preview'
@@ -9,7 +10,7 @@ import EmptyDatasetCreationModal from '../empty-dataset-creation-modal'
 import Website from '../website'
 import WebsitePreview from '../website/preview'
 import s from './index.module.css'
-import cn from '@/utils/classnames'
+// import cn from '@/utils/classnames'
 import type { CrawlOptions, CrawlResultItem, FileItem } from '@/models/datasets'
 import type { DataSourceProvider, NotionPage } from '@/models/common'
 import { DataSourceType } from '@/models/datasets'
@@ -60,8 +61,8 @@ export const NotionConnector = ({ onSetting }: NotionConnectorProps) => {
 const StepOne = ({
   datasetId,
   dataSourceType: inCreatePageDataSourceType,
-  dataSourceTypeDisable,
-  changeType,
+  // dataSourceTypeDisable,
+  // changeType,
   hasConnection,
   onSetting,
   onStepChange,
@@ -84,7 +85,7 @@ const StepOne = ({
   const [currentWebsite, setCurrentWebsite] = useState<CrawlResultItem | undefined>()
   const { t } = useTranslation()
 
-  const modalShowHandle = () => setShowModal(true)
+  // const modalShowHandle = () => setShowModal(true)
   const modalCloseHandle = () => setShowModal(false)
 
   const updateCurrentFile = (file: File) => {
@@ -131,60 +132,62 @@ const StepOne = ({
         <div className='flex justify-end'>
           <div className={classNames(s.form)}>
             {
-              shouldShowDataSourceTypeList && (
-                <div className={classNames(s.stepHeader, 'z-10 text-text-secondary bg-components-panel-bg-blur')}>{t('datasetCreation.steps.one')}</div>
-              )
+              // PBT TODO: Remove this
+              // shouldShowDataSourceTypeList && (
+              //   <div className={classNames(s.stepHeader, 'z-10 text-text-secondary bg-components-panel-bg-blur')}>{t('datasetCreation.steps.one')}</div>
+              // )
             }
             {
-              shouldShowDataSourceTypeList && (
-                <div className='flex items-center mb-8 flex-wrap gap-4'>
-                  <div
-                    className={cn(
-                      s.dataSourceItem,
-                      dataSourceType === DataSourceType.FILE && s.active,
-                      dataSourceTypeDisable && dataSourceType !== DataSourceType.FILE && s.disabled,
-                    )}
-                    onClick={() => {
-                      if (dataSourceTypeDisable)
-                        return
-                      changeType(DataSourceType.FILE)
-                      hideFilePreview()
-                      hideNotionPagePreview()
-                    }}
-                  >
-                    <span className={cn(s.datasetIcon)} />
-                    {t('datasetCreation.stepOne.dataSourceType.file')}
-                  </div>
-                  <div
-                    className={cn(
-                      s.dataSourceItem,
-                      dataSourceType === DataSourceType.NOTION && s.active,
-                      dataSourceTypeDisable && dataSourceType !== DataSourceType.NOTION && s.disabled,
-                    )}
-                    onClick={() => {
-                      if (dataSourceTypeDisable)
-                        return
-                      changeType(DataSourceType.NOTION)
-                      hideFilePreview()
-                      hideNotionPagePreview()
-                    }}
-                  >
-                    <span className={cn(s.datasetIcon, s.notion)} />
-                    {t('datasetCreation.stepOne.dataSourceType.notion')}
-                  </div>
-                  <div
-                    className={cn(
-                      s.dataSourceItem,
-                      dataSourceType === DataSourceType.WEB && s.active,
-                      dataSourceTypeDisable && dataSourceType !== DataSourceType.WEB && s.disabled,
-                    )}
-                    onClick={() => changeType(DataSourceType.WEB)}
-                  >
-                    <span className={cn(s.datasetIcon, s.web)} />
-                    {t('datasetCreation.stepOne.dataSourceType.web')}
-                  </div>
-                </div>
-              )
+              // PBT TODO: Remove this
+              // shouldShowDataSourceTypeList && (
+              //   <div className='flex items-center mb-8 flex-wrap gap-4'>
+              //     <div
+              //       className={cn(
+              //         s.dataSourceItem,
+              //         dataSourceType === DataSourceType.FILE && s.active,
+              //         dataSourceTypeDisable && dataSourceType !== DataSourceType.FILE && s.disabled,
+              //       )}
+              //       onClick={() => {
+              //         if (dataSourceTypeDisable)
+              //           return
+              //         changeType(DataSourceType.FILE)
+              //         hideFilePreview()
+              //         hideNotionPagePreview()
+              //       }}
+              //     >
+              //       <span className={cn(s.datasetIcon)} />
+              //       {t('datasetCreation.stepOne.dataSourceType.file')}
+              //     </div>
+              //     <div
+              //       className={cn(
+              //         s.dataSourceItem,
+              //         dataSourceType === DataSourceType.NOTION && s.active,
+              //         dataSourceTypeDisable && dataSourceType !== DataSourceType.NOTION && s.disabled,
+              //       )}
+              //       onClick={() => {
+              //         if (dataSourceTypeDisable)
+              //           return
+              //         changeType(DataSourceType.NOTION)
+              //         hideFilePreview()
+              //         hideNotionPagePreview()
+              //       }}
+              //     >
+              //       <span className={cn(s.datasetIcon, s.notion)} />
+              //       {t('datasetCreation.stepOne.dataSourceType.notion')}
+              //     </div>
+              //     <div
+              //       className={cn(
+              //         s.dataSourceItem,
+              //         dataSourceType === DataSourceType.WEB && s.active,
+              //         dataSourceTypeDisable && dataSourceType !== DataSourceType.WEB && s.disabled,
+              //       )}
+              //       onClick={() => changeType(DataSourceType.WEB)}
+              //     >
+              //       <span className={cn(s.datasetIcon, s.web)} />
+              //       {t('datasetCreation.stepOne.dataSourceType.web')}
+              //     </div>
+              //   </div>
+              // )
             }
             {dataSourceType === DataSourceType.FILE && (
               <>
@@ -245,7 +248,7 @@ const StepOne = ({
             )}
             {dataSourceType === DataSourceType.WEB && (
               <>
-                <div className={cn('mb-8 w-[640px]', !shouldShowDataSourceTypeList && 'mt-12')}>
+                <div className={classNames('mb-8 w-[640px]', !shouldShowDataSourceTypeList && 'mt-12')}>
                   <Website
                     onPreview={setCurrentWebsite}
                     checkedCrawlResult={websitePages}
@@ -275,10 +278,11 @@ const StepOne = ({
             {!datasetId && (
               <>
                 <div className={s.dividerLine} />
-                <span className="inline-flex items-center cursor-pointer text-[13px] leading-4 text-text-accent" onClick={modalShowHandle}>
+                {/* PBT TODO: Remove this */}
+                {/* <span className="inline-flex items-center cursor-pointer text-[13px] leading-4 text-text-accent" onClick={modalShowHandle}>
                   <RiFolder6Line className="size-4 mr-1" />
                   {t('datasetCreation.stepOne.emptyDatasetCreation')}
-                </span>
+                </span> */}
               </>
             )}
           </div>

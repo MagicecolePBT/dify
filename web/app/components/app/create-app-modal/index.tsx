@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/navigation'
 import { useContext, useContextSelector } from 'use-context-selector'
 import { RiArrowRightLine, RiCommandLine, RiCornerDownLeftLine, RiExchange2Fill } from '@remixicon/react'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { useDebounceFn, useKeyPress } from 'ahooks'
 import Image from 'next/image'
 import AppIconPicker from '../../base/app-icon-picker'
@@ -23,7 +23,8 @@ import Input from '@/app/components/base/input'
 import Textarea from '@/app/components/base/textarea'
 import AppIcon from '@/app/components/base/app-icon'
 import AppsFull from '@/app/components/billing/apps-full-in-dialog'
-import { BubbleTextMod, ChatBot, ListSparkle, Logic } from '@/app/components/base/icons/src/vender/solid/communication'
+// import { BubbleTextMod, ChatBot, ListSparkle, Logic } from '@/app/components/base/icons/src/vender/solid/communication'
+import { BubbleTextMod, ListSparkle, Logic } from '@/app/components/base/icons/src/vender/solid/communication'
 import { NEED_REFRESH_APP_LIST_KEY } from '@/config'
 import { getRedirection } from '@/utils/app-redirection'
 import FullScreenModal from '@/app/components/base/fullscreen-modal'
@@ -109,7 +110,8 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                 <span className='system-2xs-medium-uppercase text-text-tertiary'>{t('app.newApp.forBeginners')}</span>
               </div>
               <div className='flex flex-row gap-2'>
-                <AppTypeCard
+                {/* PBT TODO: change to PBT */}
+                {/* <AppTypeCard
                   active={appMode === 'chat'}
                   title={t('app.types.chatbot')}
                   description={t('app.newApp.chatbotShortDescription')}
@@ -118,6 +120,16 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                   </div>}
                   onClick={() => {
                     setAppMode('chat')
+                  }} /> */}
+                <AppTypeCard
+                  active={appMode === 'completion'}
+                  title={t('app.newApp.completeApp')}
+                  description={t('app.newApp.completionShortDescription')}
+                  icon={<div className='w-6 h-6 bg-components-icon-bg-teal-solid rounded-md flex items-center justify-center'>
+                    <ListSparkle className='w-4 h-4 text-components-avatar-shape-fill-stop-100' />
+                  </div>}
+                  onClick={() => {
+                    setAppMode('completion')
                   }} />
                 <AppTypeCard
                   active={appMode === 'agent-chat'}
@@ -129,16 +141,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                   onClick={() => {
                     setAppMode('agent-chat')
                   }} />
-                <AppTypeCard
-                  active={appMode === 'completion'}
-                  title={t('app.newApp.completeApp')}
-                  description={t('app.newApp.completionShortDescription')}
-                  icon={<div className='w-6 h-6 bg-components-icon-bg-teal-solid rounded-md flex items-center justify-center'>
-                    <ListSparkle className='w-4 h-4 text-components-avatar-shape-fill-stop-100' />
-                  </div>}
-                  onClick={() => {
-                    setAppMode('completion')
-                  }} />
+
               </div>
             </div>
             <div>
@@ -147,7 +150,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
               </div>
               <div className='flex flex-row gap-2'>
                 <AppTypeCard
-                  beta
+                  // beta
                   active={appMode === 'advanced-chat'}
                   title={t('app.types.advanced')}
                   description={t('app.newApp.advancedShortDescription')}
@@ -158,7 +161,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
                     setAppMode('advanced-chat')
                   }} />
                 <AppTypeCard
-                  beta
+                  // beta
                   active={appMode === 'workflow'}
                   title={t('app.types.workflow')}
                   description={t('app.newApp.workflowShortDescription')}
@@ -340,7 +343,8 @@ function AppPreview({ mode }: { mode: AppMode }) {
     <h4 className='system-sm-semibold-uppercase text-text-secondary'>{previewInfo.title}</h4>
     <div className='mt-1 system-xs-regular text-text-tertiary max-w-96 min-h-8'>
       <span>{previewInfo.description}</span>
-      {previewInfo.link && <Link target='_blank' href={previewInfo.link} className='text-text-accent ml-1'>{t('app.newApp.learnMore')}</Link>}
+      {/* PBT TODO: Remove this */}
+      {/* {previewInfo.link && <Link target='_blank' href={previewInfo.link} className='text-text-accent ml-1'>{t('app.newApp.learnMore')}</Link>} */}
     </div>
   </div>
 }

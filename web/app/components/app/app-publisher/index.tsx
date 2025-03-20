@@ -5,10 +5,11 @@ import {
 } from 'react'
 import { useTranslation } from 'react-i18next'
 import dayjs from 'dayjs'
-import { RiArrowDownSLine, RiPlanetLine } from '@remixicon/react'
+// import { RiArrowDownSLine, RiPlanetLine } from '@remixicon/react'
+import { RiArrowDownSLine } from '@remixicon/react'
 import Toast from '../../base/toast'
 import type { ModelAndParameter } from '../configuration/debug/types'
-import SuggestedAction from './suggested-action'
+// import SuggestedAction from './suggested-action'
 import PublishWithMultipleModel from './publish-with-multiple-model'
 import Button from '@/app/components/base/button'
 import {
@@ -20,13 +21,13 @@ import { fetchInstalledAppList } from '@/service/explore'
 import EmbeddedModal from '@/app/components/app/overview/embedded'
 import { useStore as useAppStore } from '@/app/components/app/store'
 import { useGetLanguage } from '@/context/i18n'
-import { PlayCircle } from '@/app/components/base/icons/src/vender/line/mediaAndDevices'
-import { CodeBrowser } from '@/app/components/base/icons/src/vender/line/development'
-import { LeftIndent02 } from '@/app/components/base/icons/src/vender/line/editor'
-import { FileText } from '@/app/components/base/icons/src/vender/line/files'
-import WorkflowToolConfigureButton from '@/app/components/tools/workflow-tool/configure-button'
+// import { PlayCircle } from '@/app/components/base/icons/src/vender/line/mediaAndDevices'
+// import { CodeBrowser } from '@/app/components/base/icons/src/vender/line/development'
+// import { LeftIndent02 } from '@/app/components/base/icons/src/vender/line/editor'
+// import { FileText } from '@/app/components/base/icons/src/vender/line/files'
+// import WorkflowToolConfigureButton from '@/app/components/tools/workflow-tool/configure-button'
 import type { InputVar } from '@/app/components/workflow/types'
-import { appDefaultIconBackground } from '@/config'
+// import { appDefaultIconBackground } from '@/config'
 
 export type AppPublisherProps = {
   disabled?: boolean
@@ -57,17 +58,17 @@ const AppPublisher = ({
   onRestore,
   onToggle,
   crossAxisOffset = 0,
-  toolPublished,
-  inputs,
-  onRefreshData,
+  // toolPublished,
+  // inputs,
+  // onRefreshData,
 }: AppPublisherProps) => {
   const { t } = useTranslation()
   const [published, setPublished] = useState(false)
   const [open, setOpen] = useState(false)
   const appDetail = useAppStore(state => state.appDetail)
   const { app_base_url: appBaseURL = '', access_token: accessToken = '' } = appDetail?.site ?? {}
-  const appMode = (appDetail?.mode !== 'completion' && appDetail?.mode !== 'workflow') ? 'chat' : appDetail.mode
-  const appURL = `${appBaseURL}/${appMode}/${accessToken}`
+  // const appMode = (appDetail?.mode !== 'completion' && appDetail?.mode !== 'workflow') ? 'chat' : appDetail.mode
+  // const appURL = `${appBaseURL}/${appMode}/${accessToken}`
 
   const language = useGetLanguage()
   const formatTimeFromNow = useCallback((time: number) => {
@@ -196,7 +197,7 @@ const AppPublisher = ({
               )
             }
           </div>
-          <div className='p-4 pt-3 border-t-[0.5px] border-t-black/5'>
+          {/* <div className='p-4 pt-3 border-t-[0.5px] border-t-black/5'>
             <SuggestedAction disabled={!publishedAt} link={appURL} icon={<PlayCircle />}>{t('workflow.common.runApp')}</SuggestedAction>
             {appDetail?.mode === 'workflow'
               ? (
@@ -247,7 +248,7 @@ const AppPublisher = ({
                 onRefreshData={onRefreshData}
               />
             )}
-          </div>
+          </div> */}
         </div>
       </PortalToFollowElemContent>
       <EmbeddedModal

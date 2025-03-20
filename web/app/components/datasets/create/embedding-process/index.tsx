@@ -9,7 +9,7 @@ import {
   RiCheckboxCircleFill,
   RiErrorWarningFill,
   RiLoader2Fill,
-  RiTerminalBoxLine,
+  // RiTerminalBoxLine,
 } from '@remixicon/react'
 import Image from 'next/image'
 import { indexMethodIcon, retrievalIcon } from '../icons'
@@ -213,9 +213,9 @@ const EmbeddingProcess: FC<Props> = ({ datasetId, batchId, documents = [], index
     invalidDocumentList()
     router.push(`/datasets/${datasetId}/documents`)
   }
-  const navToApiDocs = () => {
-    router.push('/datasets?category=api')
-  }
+  // const navToApiDocs = () => {
+  //   router.push('/datasets?category=api')
+  // }
 
   const isEmbedding = useMemo(() => {
     return indexingStatusBatchDetail.some(indexingStatusDetail => ['indexing', 'splitting', 'parsing', 'cleaning'].includes(indexingStatusDetail?.indexing_status || ''))
@@ -341,10 +341,11 @@ const EmbeddingProcess: FC<Props> = ({ datasetId, batchId, documents = [], index
         retrievalMethod={retrievalMethod}
       />
       <div className='flex items-center gap-2 my-10'>
-        <Button className='w-fit' onClick={navToApiDocs}>
+        {/* PBT TODO: Remove this */}
+        {/* <Button className='w-fit' onClick={navToApiDocs}>
           <RiTerminalBoxLine className='size-4 mr-2' />
           <span>Access the API</span>
-        </Button>
+        </Button> */}
         <Button className='w-fit' variant='primary' onClick={navToDocumentList}>
           <span>{t('datasetCreation.stepThree.navTo')}</span>
           <ArrowRightIcon className='size-4 ml-2 stroke-current stroke-1' />

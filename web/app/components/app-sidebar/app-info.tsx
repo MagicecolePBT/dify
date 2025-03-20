@@ -175,7 +175,8 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
       })
     }
     setShowConfirmDelete(false)
-  }, [appDetail, mutateApps, notify, onPlanInfoChanged, replace, t])
+  // }, [appDetail, mutateApps, notify, onPlanInfoChanged, replace, t])
+  }, [appDetail, mutateApps, notify, onPlanInfoChanged, replace, setAppDetail, t])
 
   const { isCurrentWorkspaceEditor } = useAppContext()
 
@@ -342,7 +343,8 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
               }}>
                 <span className='text-gray-700 text-sm leading-5'>{t('app.duplicate')}</span>
               </div>
-              {(appDetail.mode === 'completion' || appDetail.mode === 'chat') && (
+              {/* PBT TODO: Remove this */}
+              {/* {(appDetail.mode === 'completion' || appDetail.mode === 'chat') && (
                 <>
                   <Divider className="!my-1" />
                   <div
@@ -357,8 +359,8 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
                     <span className='text-gray-700 text-sm leading-5'>{t('app.switch')}</span>
                   </div>
                 </>
-              )}
-              <Divider className="!my-1" />
+              )} */}
+              {/* <Divider className="!my-1" />
               <div className='h-9 py-2 px-3 mx-1 flex items-center hover:bg-gray-50 rounded-lg cursor-pointer' onClick={exportCheck}>
                 <span className='text-gray-700 text-sm leading-5'>{t('app.export')}</span>
               </div>
@@ -373,7 +375,7 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
                     <span className='text-gray-700 text-sm leading-5'>{t('workflow.common.importDSL')}</span>
                   </div>
                 )
-              }
+              } */}
               <Divider className="!my-1" />
               <div className='group h-9 py-2 px-3 mx-1 flex items-center hover:bg-red-50 rounded-lg cursor-pointer' onClick={() => {
                 setOpen(false)

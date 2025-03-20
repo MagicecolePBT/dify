@@ -9,7 +9,7 @@ class PackagingInfo(BaseSettings):
 
     CURRENT_VERSION: str = Field(
         description="PBT version",
-        default="0.1.1",
+        default="0.1.0",
     )
 
     COMMIT_SHA: str = Field(
