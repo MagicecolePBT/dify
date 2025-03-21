@@ -224,7 +224,7 @@ const translation = {
     'end': '끝',
     'answer': '답변',
     'llm': 'LLM',
-    'knowledge-retrieval': '지식 검색',
+    'knowledge-retrieval': 'RAG 검색',
     'question-classifier': '질문 분류기',
     'if-else': 'IF/ELSE',
     'code': '코드',
@@ -244,7 +244,7 @@ const translation = {
     'end': '워크플로우의 종료 및 결과 유형을 정의합니다',
     'answer': '대화의 답변 내용을 정의합니다',
     'llm': '질문에 답하거나 자연어를 처리하기 위해 대형 언어 모델을 호출합니다',
-    'knowledge-retrieval': '사용자 질문과 관련된 텍스트 콘텐츠를 지식 베이스에서 쿼리할 수 있습니다',
+    'knowledge-retrieval': '사용자 질문과 관련된 텍스트 콘텐츠를 RAG 베이스에서 쿼리할 수 있습니다',
     'question-classifier': '사용자 질문의 분류 조건을 정의합니다. LLM은 분류 설명을 기반으로 대화의 진행 방식을 정의할 수 있습니다',
     'if-else': 'if/else 조건을 기반으로 워크플로우를 두 가지 분기로 나눌 수 있습니다',
     'code': '사용자 정의 논리를 구현하기 위해 Python 또는 NodeJS 코드를 실행합니다',
@@ -374,7 +374,7 @@ const translation = {
       model: '모델',
       variables: '변수',
       context: '컨텍스트',
-      contextTooltip: '컨텍스트로 지식을 가져올 수 있습니다',
+      contextTooltip: '컨텍스트로 RAG를 가져올 수 있습니다',
       notSetContextInPromptTip: '컨텍스트 기능을 활성화하려면 PROMPT에 컨텍스트 변수를 입력하세요.',
       prompt: '프롬프트',
       roleDescription: {
@@ -401,7 +401,7 @@ const translation = {
     },
     knowledgeRetrieval: {
       queryVariable: '쿼리 변수',
-      knowledge: '지식',
+      knowledge: 'RAG',
       outputVars: {
         output: '복구된 세그먼트 데이터',
         content: '세그먼트 내용',

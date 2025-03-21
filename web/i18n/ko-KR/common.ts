@@ -125,10 +125,10 @@ const translation = {
     apps: '스튜디오',
     plugins: '플러그인',
     pluginsTips: '타사 플러그인을 통합하거나 ChatGPT 호환 AI 플러그인을 작성합니다.',
-    datasets: '지식',
+    datasets: 'RAG',
     datasetsTips: '곧 출시될 예정: 고유한 텍스트 데이터를 가져오거나 웹훅을 통해 실시간으로 데이터를 기록하여 LLM 컨텍스트를 강화합니다.',
     newApp: '새로운 앱',
-    newDataset: '지식 만들기',
+    newDataset: 'RAG 만들기',
     tools: '도구',
   },
   userProfile: {
@@ -226,7 +226,7 @@ const translation = {
     disInvite: '초대 취소',
     deleteMember: '멤버 삭제',
     you: '(나)',
-    datasetOperator: '지식 관리자',
+    datasetOperator: 'RAG 관리자',
     setBuilder: '빌더로 설정',
     builder: '건설자',
     builderTip: '자신의 앱을 구축 및 편집할 수 있습니다.',
@@ -306,7 +306,7 @@ const translation = {
     },
     embeddingModel: {
       key: '임베딩 모델',
-      tip: '지식 문서 임베딩 처리의 기본 모델을 설정합니다. 지식 가져오기 및 임포트에 모두 이 임베딩 모델을 벡터화 처리에 사용합니다. 변경하면 가져온 지식과 질문 간의 벡터 차원이 일치하지 않아 가져오기에 실패합니다. 실패를 피하려면 이 모델을 변경하지 마세요.',
+      tip: 'RAG 문서 임베딩 처리의 기본 모델을 설정합니다. RAG 가져오기 및 임포트에 모두 이 임베딩 모델을 벡터화 처리에 사용합니다. 변경하면 가져온 RAG와 질문 간의 벡터 차원이 일치하지 않아 가져오기에 실패합니다. 실패를 피하려면 이 모델을 변경하지 마세요.',
       required: '임베딩 모델이 필요합니다',
     },
     speechToTextModel: {
@@ -399,7 +399,7 @@ const translation = {
     connect: '연결하기',
     notion: {
       title: 'Notion',
-      description: '노션을 지식 데이터 소스로 사용하기.',
+      description: '노션을 RAG 데이터 소스로 사용하기.',
       connectedWorkspace: '작업 공간에 연결됨',
       addWorkspace: '작업 공간에 추가하기',
       connected: '연결됨',
@@ -487,7 +487,7 @@ const translation = {
     documents: '문서',
     hitTesting: '검색 테스트',
     settings: '설정',
-    emptyTip: '연결된 지식이 없습니다. 애플리케이션 또는 플러그인으로 이동하여 연결을 완료하세요.',
+    emptyTip: '연결된 RAG가 없습니다. 애플리케이션 또는 플러그인으로 이동하여 연결을 완료하세요.',
     viewDoc: '문서 보기',
     relatedApp: '관련 앱',
     noRelatedApp: '연결된 앱 없음',
@@ -515,7 +515,7 @@ const translation = {
     conversationNameCanNotEmpty: '대화 이름은 필수입니다',
     citation: {
       title: '인용',
-      linkToDataset: '지식 링크',
+      linkToDataset: 'RAG 링크',
       characters: '문자수:',
       hitCount: '검색 횟수:',
       vectorHash: '벡터 해시:',

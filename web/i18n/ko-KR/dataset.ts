@@ -1,17 +1,17 @@
 const translation = {
-  knowledge: '지식',
+  knowledge: 'RAG',
   documentCount: ' 문서',
   wordCount: ' k 단어',
   appCount: ' 연결된 앱',
-  createDataset: '지식 생성',
+  createDataset: 'RAG 생성',
   createDatasetIntro: '자체 텍스트 데이터를 가져오거나 LLM 컨텍스트를 강화하기 위해 웹훅을 통해 실시간 데이터를 기록할 수 있습니다.',
-  deleteDatasetConfirmTitle: '이 지식을 삭제하시겠습니까?',
-  deleteDatasetConfirmContent: '지식을 삭제하면 다시 되돌릴 수 없습니다.', // PBT TODO: change to PBT
-  datasetUsedByApp: '이 지식은 일부 앱에서 사용 중입니다. 앱에서 더 이상 이 지식을 사용할 수 없게 되며, 모든 프롬프트 구성 및 로그가 영구적으로 삭제됩니다.',
-  datasetDeleted: '지식이 삭제되었습니다',
-  datasetDeleteFailed: '지식 삭제에 실패했습니다',
+  deleteDatasetConfirmTitle: '이 RAG를 삭제하시겠습니까?',
+  deleteDatasetConfirmContent: 'RAG를 삭제하면 다시 되돌릴 수 없습니다.', // PBT TODO: change to PBT
+  datasetUsedByApp: '이 RAG는 일부 앱에서 사용 중입니다. 앱에서 더 이상 이 RAG를 사용할 수 없게 되며, 모든 프롬프트 구성 및 로그가 영구적으로 삭제됩니다.',
+  datasetDeleted: 'RAG가 삭제되었습니다',
+  datasetDeleteFailed: 'RAG 삭제에 실패했습니다',
   didYouKnow: '알고 계셨나요?',
-  intro1: '지식을 PBT 애플리케이션에 ', // PBT TODO: change to PBT
+  intro1: 'RAG를 PBT 애플리케이션에 ', // PBT TODO: change to PBT
   intro2: '컨텍스트로',
   intro3: ' 통합할 수 있습니다.',
   intro4: '혹은, ',
@@ -19,7 +19,7 @@ const translation = {
   intro6: ' 독립적인 ChatGPT 인덱스 플러그인으로 공개할 수 있습니다',
   unavailable: '사용 불가',
   unavailableTip: '임베딩 모델을 사용할 수 없습니다. 기본 임베딩 모델을 설정해야 합니다.',
-  datasets: '지식',
+  datasets: 'RAG',
   datasetsApi: 'API',
   retrieval: {
     semantic_search: {
@@ -54,8 +54,8 @@ const translation = {
     hybrid_search: '하이브리드',
     invertedIndex: '역인덱스',
   },
-  mixtureHighQualityAndEconomicTip: '고품질과 경제적 지식 베이스의 혼합을 위해서는 재순위 모델이 필요합니다.',
-  inconsistentEmbeddingModelTip: '선택된 지식 베이스의 임베딩 모델이 일관되지 않은 경우 재순위 모델이 필요합니다.',
+  mixtureHighQualityAndEconomicTip: '고품질과 경제적 RAG 베이스의 혼합을 위해서는 재순위 모델이 필요합니다.',
+  inconsistentEmbeddingModelTip: '선택된 RAG 베이스의 임베딩 모델이 일관되지 않은 경우 재순위 모델이 필요합니다.',
   retrievalSettings: '검색 설정',
   rerankSettings: '재순위 설정',
   weightedScore: {
@@ -70,13 +70,13 @@ const translation = {
   nTo1RetrievalLegacy: 'N-대-1 검색은 9월부터 공식적으로 더 이상 사용되지 않습니다. 더 나은 결과를 얻으려면 최신 다중 경로 검색을 사용하는 것이 좋습니다.',
   nTo1RetrievalLegacyLink: '자세히 알아보기',
   nTo1RetrievalLegacyLinkText: 'N-대-1 검색은 9월에 공식적으로 더 이상 사용되지 않습니다.',
-  defaultRetrievalTip: '다중 경로 검색이 기본적으로 사용됩니다. 지식은 여러 기술 자료에서 검색된 다음 순위가 다시 매겨집니다.',
+  defaultRetrievalTip: '다중 경로 검색이 기본적으로 사용됩니다. RAG는 여러 기술 자료에서 검색된 다음 순위가 다시 매겨집니다.',
   editExternalAPIConfirmWarningContent: {
-    front: '이 외부 지식 API는 다음에 연결됩니다.',
-    end: '외부 지식, 그리고 이 수정 사항은 그들 모두에게 적용될 것입니다. 이 변경 사항을 저장하시겠습니까?',
+    front: '이 외부 RAG API는 다음에 연결됩니다.',
+    end: '외부 RAG, 그리고 이 수정 사항은 그들 모두에게 적용될 것입니다. 이 변경 사항을 저장하시겠습니까?',
   },
   editExternalAPIFormWarning: {
-    end: '외부 지식',
+    end: '외부 RAG',
     front: '이 외부 API는 다음에 연결됩니다.',
   },
   deleteExternalAPIConfirmWarningContent: {
@@ -85,13 +85,13 @@ const translation = {
       end: '?',
     },
     content: {
-      front: '이 외부 지식 API는 다음에 연결됩니다.',
-      end: '외부 지식. 이 API를 삭제하면 모두 무효화됩니다. 이 API를 삭제하시겠습니까?',
+      front: '이 외부 RAG API는 다음에 연결됩니다.',
+      end: '외부 RAG. 이 API를 삭제하면 모두 무효화됩니다. 이 API를 삭제하시겠습니까?',
     },
     noConnectionContent: '이 API를 삭제하시겠습니까?',
   },
   selectExternalKnowledgeAPI: {
-    placeholder: '외부 지식 API 선택',
+    placeholder: '외부 RAG API 선택',
   },
   connectDatasetIntro: {
     content: {
@@ -125,26 +125,26 @@ const translation = {
     cancel: '취소',
     apiKey: 'API 키',
   },
-  editExternalAPITooltipTitle: '연결된 지식',
-  externalAPIPanelTitle: '외부 지식 API',
-  externalKnowledgeDescription: '지식 설명',
+  editExternalAPITooltipTitle: '연결된 RAG',
+  externalAPIPanelTitle: '외부 RAG API',
+  externalKnowledgeDescription: 'RAG 설명',
   externalAPI: '외부 API',
-  externalKnowledgeName: '외부 지식 이름',
-  createExternalAPI: '외부 지식 API 추가',
+  externalKnowledgeName: '외부 RAG 이름',
+  createExternalAPI: '외부 RAG API 추가',
   externalTag: '외부',
-  editExternalAPIFormTitle: '외부 지식 API 편집',
+  editExternalAPIFormTitle: '외부 RAG API 편집',
   externalKnowledgeNamePlaceholder: '기술 자료의 이름을 입력하십시오.',
-  externalAPIPanelDocumentation: '외부 지식 API를 만드는 방법 알아보기',
-  createNewExternalAPI: '새 외부 지식 API 만들기',
-  mixtureInternalAndExternalTip: '리랭크 모델은 내부 및 외부 지식의 혼합에 필요합니다.',
+  externalAPIPanelDocumentation: '외부 RAG API를 만드는 방법 알아보기',
+  createNewExternalAPI: '새 외부 RAG API 만들기',
+  mixtureInternalAndExternalTip: '리랭크 모델은 내부 및 외부 RAG의 혼합에 필요합니다.',
   connectDataset: '외부 기술 자료에 연결',
-  learnHowToWriteGoodKnowledgeDescription: '적절한 지식 설명을 작성하는 방법 알아보기',
+  learnHowToWriteGoodKnowledgeDescription: '적절한 RAG 설명을 작성하는 방법 알아보기',
   externalKnowledgeDescriptionPlaceholder: '이 기술 자료의 내용 설명(선택 사항)',
-  externalKnowledgeId: '외부 지식 ID',
-  externalKnowledgeIdPlaceholder: '지식 ID를 입력하십시오.',
-  allExternalTip: '외부 지식만 사용하는 경우 사용자는 리랭크 모델을 사용할지 여부를 선택할 수 있습니다. 활성화하지 않으면 검색된 청크가 점수에 따라 정렬됩니다. 서로 다른 기술 자료의 검색 전략이 일관되지 않으면 부정확합니다.',
-  externalAPIPanelDescription: '외부 지식 API는 PBT 외부의 기술 자료에 연결하고 해당 기술 자료에서 지식을 검색하는 데 사용됩니다.', // PBT TODO: change to PBT
-  noExternalKnowledge: '아직 외부 지식 API가 없으므로 여기를 클릭하여 생성하십시오.',
+  externalKnowledgeId: '외부 RAG ID',
+  externalKnowledgeIdPlaceholder: 'RAG ID를 입력하십시오.',
+  allExternalTip: '외부 RAG만 사용하는 경우 사용자는 리랭크 모델을 사용할지 여부를 선택할 수 있습니다. 활성화하지 않으면 검색된 청크가 점수에 따라 정렬됩니다. 서로 다른 기술 자료의 검색 전략이 일관되지 않으면 부정확합니다.',
+  externalAPIPanelDescription: '외부 RAG API는 PBT 외부의 기술 자료에 연결하고 해당 기술 자료에서 RAG를 검색하는 데 사용됩니다.', // PBT TODO: change to PBT
+  noExternalKnowledge: '아직 외부 RAG API가 없으므로 여기를 클릭하여 생성하십시오.',
   chunkingMode: {
     parentChild: '부모-자식',
     general: '일반',
@@ -165,7 +165,7 @@ const translation = {
   preprocessDocument: '{{숫자}} 문서 전처리',
   enable: '사용',
   documentsDisabled: '{{num}} 문서 사용 안 함 - 30일 이상 비활성 상태',
-  allKnowledge: '모든 지식',
+  allKnowledge: '모든 RAG',
   allKnowledgeDescription: '이 작업 영역의 모든 정보를 표시하려면 선택합니다. 워크스페이스 소유자만 모든 기술 자료를 관리할 수 있습니다.',
 }
 
