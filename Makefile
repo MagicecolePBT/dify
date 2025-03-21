@@ -1,7 +1,7 @@
 # Variables
-DOCKER_REGISTRY=langgenius
-WEB_IMAGE=$(DOCKER_REGISTRY)/dify-web
-API_IMAGE=$(DOCKER_REGISTRY)/dify-api
+DOCKER_REGISTRY=magicecole
+WEB_IMAGE=$(DOCKER_REGISTRY)/agentbuilder-web
+API_IMAGE=$(DOCKER_REGISTRY)/agentbuilder-api
 VERSION=latest
 
 # Build Docker images
