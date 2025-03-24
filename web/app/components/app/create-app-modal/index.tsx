@@ -41,7 +41,7 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
   const { notify } = useContext(ToastContext)
   const mutateApps = useContextSelector(AppsContext, state => state.mutateApps)
 
-  const [appMode, setAppMode] = useState<AppMode>('chat')
+  const [appMode, setAppMode] = useState<AppMode>('completion')
   const [appIcon, setAppIcon] = useState<AppIconSelection>({ type: 'emoji', icon: '🤖', background: '#FFEAD5' })
   const [showAppIconPicker, setShowAppIconPicker] = useState(false)
   const [name, setName] = useState('')
@@ -242,13 +242,13 @@ function CreateApp({ onClose, onSuccess, onCreateFromTemplate }: CreateAppProps)
           <div className='h-6 2xl:h-[139px]' />
           <AppPreview mode={appMode} />
           <div className='absolute left-0 right-0 border-b border-b-divider-subtle'></div>
-          <div className='w-[664px] h-[448px] flex items-center justify-center' style={{ background: 'repeating-linear-gradient(135deg, transparent, transparent 2px, rgba(16,24,40,0.04) 4px,transparent 3px, transparent 6px)' }}>
+          {/* <div className='w-[664px] h-[448px] flex items-center justify-center' style={{ background: 'repeating-linear-gradient(135deg, transparent, transparent 2px, rgba(16,24,40,0.04) 4px,transparent 3px, transparent 6px)' }}>
             <AppScreenShot show={appMode === 'chat'} mode='chat' />
             <AppScreenShot show={appMode === 'advanced-chat'} mode='advanced-chat' />
             <AppScreenShot show={appMode === 'agent-chat'} mode='agent-chat' />
             <AppScreenShot show={appMode === 'completion'} mode='completion' />
             <AppScreenShot show={appMode === 'workflow'} mode='workflow' />
-          </div>
+          </div> */}
           <div className='absolute left-0 right-0 border-b border-b-divider-subtle'></div>
         </div>
       </div>

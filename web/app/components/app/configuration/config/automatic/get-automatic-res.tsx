@@ -77,10 +77,10 @@ const GetAutomaticRes: FC<IGetAutomaticResProps> = ({
     currentModel,
   } = useModelListAndDefaultModelAndCurrentProviderAndModel(ModelTypeEnum.textGeneration)
   const tryList = [
-    {
-      icon: RiTerminalBoxLine,
-      key: 'pythonDebugger',
-    },
+    // {
+    //   icon: RiTerminalBoxLine,
+    //   key: 'pythonDebugger',
+    // },
     {
       icon: RiTranslate,
       key: 'translation',
@@ -105,14 +105,14 @@ const GetAutomaticRes: FC<IGetAutomaticResProps> = ({
       icon: RiRoadMapLine,
       key: 'travelPlanning',
     },
-    {
-      icon: RiDatabase2Line,
-      key: 'SQLSorcerer',
-    },
-    {
-      icon: RiGitCommitLine,
-      key: 'GitGud',
-    },
+    // {
+    //   icon: RiDatabase2Line,
+    //   key: 'SQLSorcerer',
+    // },
+    // {
+    //   icon: RiGitCommitLine,
+    //   key: 'GitGud',
+    // },
   ]
 
   const [instruction, setInstruction] = React.useState<string>('')

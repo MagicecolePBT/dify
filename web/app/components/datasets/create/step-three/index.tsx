@@ -59,13 +59,14 @@ const StepThree = ({ datasetId, datasetName, indexingType, creationCache, retrie
       </div>
       {!isMobile && (
         <div className="shrink-0 pt-[88px] pr-8 text-xs">
-          <div className="flex flex-col gap-3 w-[328px] p-6 text-text-tertiary bg-background-section rounded-xl">
+          {/* PBT TODO: Remove this */}
+          {/* <div className="flex flex-col gap-3 w-[328px] p-6 text-text-tertiary bg-background-section rounded-xl">
             <div className="flex justify-center items-center size-10 bg-components-card-bg rounded-[10px] shadow-lg">
               <RiBookOpenLine className="size-5 text-text-accent" />
             </div>
             <div className="text-base font-semibold text-text-secondary">{t('datasetCreation.stepThree.sideTipTitle')}</div>
             <div className="text-text-tertiary">{t('datasetCreation.stepThree.sideTipContent')}</div>
-          </div>
+          </div> */}
         </div>
       )}
     </div>

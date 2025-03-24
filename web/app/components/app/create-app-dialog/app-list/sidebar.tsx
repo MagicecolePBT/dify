@@ -28,12 +28,13 @@ export default function Sidebar({ current, onClick, onCreateFromBlank }: Sidebar
     </ul>
     <div className='px-3 pt-2 pb-1 system-xs-medium-uppercase text-text-tertiary'>{t('app.newAppFromTemplate.byCategories')}</div>
     <ul className='flex-grow flex flex-col gap-0.5'>
-      <CategoryItem category={AppCategories.ASSISTANT} active={current === AppCategories.ASSISTANT} onClick={onClick} />
+      {/* TODO: Remove this */}
+      {/* <CategoryItem category={AppCategories.ASSISTANT} active={current === AppCategories.ASSISTANT} onClick={onClick} />
       <CategoryItem category={AppCategories.AGENT} active={current === AppCategories.AGENT} onClick={onClick} />
       <CategoryItem category={AppCategories.HR} active={current === AppCategories.HR} onClick={onClick} />
-      <CategoryItem category={AppCategories.PROGRAMMING} active={current === AppCategories.PROGRAMMING} onClick={onClick} />
+      <CategoryItem category={AppCategories.PROGRAMMING} active={current === AppCategories.PROGRAMMING} onClick={onClick} /> */}
       <CategoryItem category={AppCategories.WORKFLOW} active={current === AppCategories.WORKFLOW} onClick={onClick} />
-      <CategoryItem category={AppCategories.WRITING} active={current === AppCategories.WRITING} onClick={onClick} />
+      {/* <CategoryItem category={AppCategories.WRITING} active={current === AppCategories.WRITING} onClick={onClick} /> */}
     </ul>
     <Divider bgStyle='gradient' />
     <div className='px-3 py-1 flex items-center gap-1 text-text-tertiary cursor-pointer' onClick={onCreateFromBlank}>

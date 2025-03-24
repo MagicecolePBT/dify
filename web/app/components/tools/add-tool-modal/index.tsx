@@ -182,12 +182,13 @@ const AddToolModal: FC<Props> = ({
           <div className='relative shrink-0 w-[200px] pb-3 bg-gray-100 rounded-l-xl border-r-[0.5px] border-black/2 overflow-y-auto'>
             <div className='sticky top-0 left-0 right-0'>
               <div className='sticky top-0 left-0 right-0 px-5 py-3 text-md font-semibold text-gray-900'>{t('tools.addTool')}</div>
-              <div className='px-3 pt-2 pb-4'>
+              {/* PBT TODO: Remove this */}
+              {/* <div className='px-3 pt-2 pb-4'>
                 <Button variant='primary' className='w-[176px]' onClick={() => setIsShowEditCustomCollectionModal(true)}>
                   <RiAddLine className='w-4 h-4 mr-1' />
                   {t('tools.createCustomTool')}
                 </Button>
-              </div>
+              </div> */}
             </div>
             <div className='px-2 py-1'>
               <Type value={currentType} onSelect={setCurrentType} />

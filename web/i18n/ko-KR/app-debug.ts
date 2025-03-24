@@ -342,7 +342,7 @@ const translation = {
     },
   },
   inputs: {
-    title: '디버그 및 미리보기',
+    title: '미리보기',
     noPrompt: '프리프롬프트 입력란에 몇 가지 프롬프트를 작성해보세요.',
     userInputField: '사용자 입력 필드',
     noVar: '변수 값을 입력하세요. 새로운 세션이 시작될 때마다 프롬프트 단어가 자동으로 대체됩니다.',
