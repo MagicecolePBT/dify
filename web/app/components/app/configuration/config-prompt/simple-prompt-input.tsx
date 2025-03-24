@@ -177,11 +177,12 @@ const Prompt: FC<ISimplePromptInput> = ({
                 />
               )}
             </div>
-            <div className='flex items-center'>
+            {/* PBT TODO: Remove this */}
+            {/* <div className='flex items-center'>
               {!readonly && !isMobile && (
                 <AutomaticBtn onClick={showAutomaticTrue} />
               )}
-            </div>
+            </div> */}
           </div>
         )}
 

@@ -29,7 +29,8 @@ const PromptGeneratorBtn: FC<Props> = ({
   }, [onGenerated, showAutomaticFalse])
   return (
     <div className={cn(className)}>
-      <ActionButton
+      {/* PBT TODO: Remove this */}
+      {/* <ActionButton
         className='hover:bg-[#155EFF]/8'
         onClick={showAutomaticTrue}>
         <Generator className='w-4 h-4 text-primary-600' />
@@ -43,7 +44,7 @@ const PromptGeneratorBtn: FC<Props> = ({
           model={modelConfig as Model}
           isInLLMNode
         />
-      )}
+      )} */}
     </div>
   )
 }

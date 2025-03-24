@@ -142,7 +142,8 @@ const Editor: FC<Props> = ({
               <div className='w-px h-3 ml-2 mr-2 bg-gray-200'></div>
               {/* Operations */}
               <div className='flex items-center space-x-[2px]'>
-                {isSupportJinja && (
+                {/* PBT TODO: Remove this */}
+                {/* {isSupportJinja && (
                   <Tooltip
                     popupContent={
                       <div>
@@ -164,7 +165,7 @@ const Editor: FC<Props> = ({
                     </div>
                   </Tooltip>
 
-                )}
+                )} */}
                 {!readOnly && (
                   <Tooltip
                     popupContent={`${t('workflow.common.insertVarTip')}`}
